@@ -57,7 +57,49 @@ function createHeart() {
 function birthdaySurprise() {
 
     document.getElementById("final").style.display = "none";
-
     document.getElementById("birthday").style.display = "block";
+
+    createBalloons();
+    createConfetti();
+
+}
+
+
+function createBalloons() {
+
+    const balloons = document.getElementById("balloons");
+
+    for (let i = 0; i < 15; i++) {
+
+        const balloon = document.createElement("div");
+
+        balloon.innerHTML = "🎈";
+        balloon.classList.add("balloon");
+
+        balloon.style.left = Math.random() * 100 + "vw";
+        balloon.style.animationDuration = (4 + Math.random() * 4) + "s";
+        balloon.style.animationDelay = Math.random() * 2 + "s";
+
+        balloons.appendChild(balloon);
+    }
+}
+
+
+function createConfetti() {
+
+    const confetti = document.getElementById("confetti");
+
+    for (let i = 0; i < 80; i++) {
+
+        const piece = document.createElement("div");
+
+        piece.classList.add("confetti-piece");
+
+        piece.style.left = Math.random() * 100 + "vw";
+        piece.style.animationDuration = (2 + Math.random() * 3) + "s";
+        piece.style.animationDelay = Math.random() * 2 + "s";
+
+        confetti.appendChild(piece);
+    }
 
 }
