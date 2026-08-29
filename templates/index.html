@@ -1,11 +1,14 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
 
-    <title>Something Special ❤️</title>
+```
+<title>Something Special ❤️</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+```
 
 </head>
 
@@ -16,60 +19,120 @@
 </audio>
 
 <!-- First Screen -->
-    <div class="container" id="welcome">
 
-        <h1>Hey You ❤️</h1>
+<div class="container" id="welcome">
 
-        <p>I made something special for you...</p>
+```
+<h1>Hey You ❤️</h1>
 
-        <button onclick="openLove()">Open ❤️</button>
+<p>I made something special for you...</p>
 
-    </div>
+<button onclick="openLove()">Open ❤️</button>
+```
 
+</div>
 
-    <!-- Question Screen -->
+<!-- Question Screen -->
 
-    <div class="container" id="question" style="display: none;">
+<div class="container" id="question" style="display: none;">
 
-        <h1>One Question 🥺</h1>
+```
+<h1>One Question 🥺</h1>
 
-        <p>Do you love me? ❤️</p>
+<p>Do you love me? ❤️</p>
 
-        <button onclick="yesClicked()">YES ❤️</button>
+<button onclick="yesClicked()">YES ❤️</button>
 
 <button id="noButton" onmouseover="moveButton()">NO 😏</button>
+```
 
-    </div>
+</div>
+
+<!-- Final Love Message -->
 
 <div class="container" id="final" style="display: none;">
 
-    <h1>I Knew It! 🥹❤️</h1>
+```
+<h1>I Knew It! 🥹❤️</h1>
 
-    <p>
-        I just want you to know...
-    </p>
+<p>
+    I just want you to know...
+</p>
 
-    <p>
-        You are so special to me, and I honestly don't know what I would do without you. ❤️
+<p>
+    You are so special to me, and I honestly don't know what I would do without you. ❤️
 
-I am truly sorry for all my mistakes. I know I have made mistakes, and I genuinely regret them.
-Main aise galtiyan dobara kabhi nahi karunga, I promise Ayeshuu 🥹❤️
+    I am truly sorry for all my mistakes. I know I have made mistakes, and I genuinely regret them.
 
-    </p>
+    Main aise galtiyan dobara kabhi nahi karunga, I promise Ayeshuu 🥹❤️
+</p>
 
-    <p>
-        You are one of the most beautiful parts of my life.
-        Every moment with you means something special to me. 🫶
-    </p>
+<p>
+    You are one of the most beautiful parts of my life.
+    Every moment with you means something special to me. 🫶
+</p>
 
-<img src="{{ url_for('static', filename='images/photo1.jpeg') }}" 
-     alt="Our photo" 
+<img src="{{ url_for('static', filename='images/photo1.jpeg') }}"
+     alt="Our photo"
      class="love-photo">
-    <h2>I LOVE YOU FOREVER AND EVER JAAAANNAAA❤️</h2>
+
+<h2>I LOVE YOU FOREVER AND EVER JAAAANNAAA ❤️</h2>
+
 <button onclick="birthdaySurprise()">🎁 One More Surprise</button>
+```
 
 </div>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+<!-- Birthday Screen -->
+
+<div class="container" id="birthday" style="display: none;">
+
+```
+<h1>🎂❤️ Happy Birthday in Advance, Ayeshuuuu ❤️🎂</h1>
+
+<p>
+    I know your birthday is still a few months away, but honestly…
+    why should I wait until December to tell you how special you are to me? 🥹❤️
+</p>
+
+<p>
+    I don't know what the future has planned for us, but I do know that
+    having you in my life has given me so many beautiful moments
+    that I'll always be grateful for. 🫶
+</p>
+
+<p>
+    I hope your birthday brings you everything your heart wishes for.
+    I hope you keep smiling, keep laughing, keep being the beautiful
+    person you are, and never forget how deeply you are loved. ❤️
+</p>
+
+<p>
+    And yes… I'm wishing you <b>way too early</b> 😂
+    but that's okay. I wanted to be the first one to remind you
+    that your special day is coming. 🥹🎂
+</p>
+
+<p>
+    Happy Birthday in advance, Jaaaannaaa. ❤️
+</p>
+
+<p>
+    May this new year of your life be filled with happiness,
+    success, peace, and countless beautiful memories Aameen.
+</p>
+
+<p>
+    And if I get to be a part of even some of those memories…
+    I'll consider myself lucky. ❤️🥹
+</p>
+
+<h2>I LOVE YOU FOREVER AND EVER ❤️🫶</h2>
+```
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
 
