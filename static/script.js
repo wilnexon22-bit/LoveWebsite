@@ -31,6 +31,8 @@ function yesClicked() {
     setInterval(createHeart, 300);
 
 }
+
+
 function createHeart() {
 
     const heart = document.createElement("div");
@@ -48,4 +50,14 @@ function createHeart() {
     setTimeout(() => {
         heart.remove();
     }, 6000);
+
+}
+
+
+function birthdaySurprise() {
+
+    document.getElementById("final").style.display = "none";
+
+    document.getElementById("birthday").style.display = "block";
+
 }
