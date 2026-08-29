@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Something Special ❤️</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<audio id="loveSong" loop>
+    <source src="{{ url_for('static', filename='music/Maine Khud Ko.mp3') }}" type="audio/mpeg">
+</audio>
+
+    <!-- First Screen -->
+
+    <div class="container" id="welcome">
+
+        <h1>Hey You ❤️</h1>
+
+        <p>I made something special for you...</p>
+
+        <button onclick="openLove()">Open ❤️</button>
+
+    </div>
+
+
+    <!-- Question Screen -->
+
+    <div class="container" id="question" style="display: none;">
+
+        <h1>One Question 🥺</h1>
+
+        <p>Do you love me? ❤️</p>
+
+        <button onclick="yesClicked()">YES ❤️</button>
+
+<button id="noButton" onmouseover="moveButton()">NO 😏</button>
+
+    </div>
+
+<div class="container" id="final" style="display: none;">
+
+    <h1>I Knew It! 🥹❤️</h1>
+
+    <p>
+        I just want you to know...
+    </p>
+
+    <p>
+        You are so special to me, and I honestly don't know what I would do without you. ❤️
+
+I am truly sorry for all my mistakes. I know I have made mistakes, and I genuinely regret them.
+Main aise galtiyan dobara kabhi nahi karunga, I promise Ayeshuu 🥹❤️
+
+    </p>
+
+    <p>
+        You are one of the most beautiful parts of my life.
+        Every moment with you means something special to me. 🫶
+    </p>
+
+<img src="{{ url_for('static', filename='images/photo1.jpeg') }}" 
+     alt="Our photo" 
+     class="love-photo">
+    <h2>I LOVE YOU FOREVER AND EVER JAAAANNAAA❤️</h2>
+
+</div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
